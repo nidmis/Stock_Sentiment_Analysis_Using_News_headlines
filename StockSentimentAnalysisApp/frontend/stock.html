@@ -1,0 +1,44 @@
+<!-- frontend/stock.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Stock Details</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="news.html">News & Blogs</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stock-info">
+            <h2 id="stock-symbol"></h2>
+            <canvas id="stock-chart"></canvas>
+        </section>
+
+        <section id="stock-news">
+            <h2>Related News</h2>
+            <ul id="news-list"></ul>
+        </section>
+
+        <section id="sentiment-analysis">
+            <h2>Sentiment Analysis</h2>
+            <canvas id="sentiment-chart"></canvas>
+        </section>
+
+        <section id="stock-prediction">
+            <h2>Stock Prediction</h2>
+            <p id="prediction-result"></p>
+        </section>
+    </main>
+
+    <script src="js/stock.js"></script>
+</body>
+</html>
